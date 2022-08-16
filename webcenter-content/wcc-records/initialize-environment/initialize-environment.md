@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this lab we will review and startup all components required to successfully run this workshop.
+In this lab, we will review and startup all components required to successfully run this workshop.
 
 *Estimated Time:* 30 Minutes.
 
@@ -21,7 +21,7 @@ This lab assumes you have:
     - Lab: Prepare Setup (*Free-tier* and *Paid Tenants* only)
     - Lab: Environment Setup
 
-## Task 1: Validate That Required Processes are Up and Running.
+## Task 1: Validate That Required Processes are Up and Running
 1. Now with access to your remote desktop session, proceed as indicated below to validate your environment before you start executing the subsequent labs. The following Processes should be up and running:
 
     - Database Listener
@@ -59,9 +59,9 @@ This lab assumes you have:
 
     ![This image shows the status of the WebCenter Content UI Landing page post successful login](./images/webcenter-post-login.png "WebCenter Content UI Landing page post successful login")
 
-    If successful, the page above is displayed and as a result your environment is now ready.  
+    If successful, the page above is displayed and as a result, your environment is now ready.  
 
-4. If you are still unable to login or the login page is not functioning after reloading by double-clicking on the desktop icon *Get Started with your Workshop*, open a terminal session and proceed as indicated below to validate the services.
+4. If you are still unable to log in or the login page is not functioning after reloading by double-clicking on the desktop icon *Get Started with your Workshop*, open a terminal session and proceed as indicated below to validate the services.
 
     - Database and Listener
 
@@ -93,7 +93,7 @@ This lab assumes you have:
 
     ![This image shows the status of the WebCenter Content server](./images/webcenter-status.png "WebCenter Content Server Status")
 
-5. If you see questionable output(s), failure or down component(s), restart the corresponding service(s) accordingly
+5. If you see the questionable output(s), failure or down component(s), restart the corresponding service(s) accordingly
 
     - Database and Listener
 
@@ -119,28 +119,7 @@ This lab assumes you have:
     </copy>
     ```
 
-## Task 2: Install Records on UCM and configure the Setup Checklist
-
-> **Note:** *Records* option in the menu bar indicates that there is already Records installed and configured. In that case you can skip this task and proceed to next lab if Records Initial setup is completed.
-
-1. Login to Content server as an administrator and click on **Configure Records Settings** under Administration tab as shown in the image below.
-
-    ![This image shows how to configure record settings](./images/configure-records-settings.png "Configure Records Settings")
-
-2. Select the software configuration as shown in the image.
-
-    ![Select the Installation Level as shown in the image.](./images/installation-level.png "Installation Level")
-    ![Features Associated with the Installation Level chosen.](./images/installation-feature.png "Installation Feature")
-
-    > **Note:** Restart the servers after selecting the installation settings for the changes to be applied.
-
-3. After the installation is successfully completed ,configure the setup checklist by clicking on **Records** tab,select **Configure** option and then select **Setup Checklist**.
-
-    ![Selecting the initial Setup checklist](./images/select-setup-checklist.png "Select SetUp CheckList")
-
-4. On the Setup Checklist page install the defaults and configure security settings.
-
-    ![Configure the Initial Set Up checklist as shown in this image.](./images/initial-setup-checklist.png "Initial SetUp CheckList")
+6. After you log in to the WebCenter Content server, you can see that records are already pre-configured. Refer the Appendix 2 to know how to install Records on the WebCenter Content Server.
 
 You may now **proceed to the next lab**.
 
@@ -223,12 +202,33 @@ You may now **proceed to the next lab**.
     <copy>sudo systemctl restart ucm</copy>
     ```
 
-## Want to Learn More?
+## Appendix 2: Installation of Records on WebCenter Content
+
+1. Log in to the Content server as an administrator and click on **Configure Records Settings** under the Administration tab as shown in the image below.
+
+    ![This image shows how to configure record settings](./images/configure-records-settings.png "Configure Records Settings")
+
+2. Select the software configuration as shown in the image.
+
+    ![Select the Installation Level as shown in the image.](./images/installation-level.png "Installation Level")
+    ![Features Associated with the Installation Level chosen.](./images/installation-feature.png "Installation Feature")
+
+    > **Note:** Restart the servers after selecting the installation settings for the changes to be applied.
+
+3. After the installation is completed, configure the setup checklist by clicking on the **Records** tab, selecting the **Configure** option and then selecting **Setup Checklist**.
+
+    ![Selecting the initial Setup checklist](./images/select-setup-checklist.png "Select SetUp CheckList")
+
+4. On the Setup Checklist page install the defaults and configure security settings.
+
+    ![Configure the Initial Set Up checklist as shown in this image.](./images/initial-setup-checklist.png "Initial SetUp CheckList")
+
+## Learn More
 
 - [Introduction To WebCenter Records](https://docs.oracle.com/en/middleware/webcenter/content/12.2.1.4/index.html)
 
 ## Acknowledgements
 
-- **Authors-** Shriraksha S Nataraj, Staff Solution Engineer , Oracle WebCenter Content
+- **Authors-** Shriraksha S Nataraj, Staff Solution Engineer, Oracle WebCenter Content
 - **Contributors-** Shriraksha S Nataraj, Rene Fontcha
-- **Last Updated By/Date-** Rene Fontcha , July 2022
+- **Last Updated By/Date-** Shriraksha S Nataraj, August 2022
